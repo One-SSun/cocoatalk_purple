@@ -1,0 +1,123 @@
+.chatroom-main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.chat__timestamp {
+    color:var(--black);
+    background-color: var(--lightpurple);
+    padding:10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-size:14px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    padding: 0px 15px;
+    margin-bottom: 24px;
+}
+
+.message-row img {
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+    margin-right: 15px;
+}
+
+.message__author {
+    color: var(--blue);
+    font-size: 20px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.message__time {
+    color: var(--lightpurple);
+    font-size: 14px;
+}
+
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message__bubble {
+    background-color: var(--purple);
+    padding: 13px;
+    border-radius: 18px;
+    border-top-left-radius: 0px;
+    margin-right: 8px;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--blue);
+}
+
+.message-row-two {
+    justify-content: flex-end;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    width:100%;
+}
+
+.message-row-two .message__info {
+    flex-direction: row-reverse;
+}
+
+.message-row-two .message__bubble {
+    background-color: white;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 18px;
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+.message-row-three {
+    width: 100%;
+    display: flex;
+    padding: 0px 15px;
+    margin-bottom: 22px;
+    margin-top:22px;
+}
+
+.message-row-three img {
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+    margin-right: 15px;
+}
+
+
+@keyframes slidetop {
+    from {
+      transform: translateY(60px);
+      opacity: 0;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  .message-row,
+  .message-row-two,
+  .message-row-three {
+    transform: translateY(60px);
+    opacity: 0;
+    animation: slidetop 1.8s ease-in-out forwards;
+  }
+  
+  .message-row {
+    animation-delay: 0s;
+  }
+  
+  .message-row-two {
+    animation-delay: 1s;
+  }
+  .message-row-three {
+    animation-delay: 1.8s;
+  }
+  

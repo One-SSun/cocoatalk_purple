@@ -1,0 +1,21 @@
+.more-main{
+    padding:0 25px;
+}
+
+.etc__title {
+    font-size: 20px;
+    padding: 10px 0px;
+    justify-content: center;
+    color: var(--purple);
+    border-top: var(--border);
+}
+
+.etc-box {
+    display: flex;
+    justify-content: center;
+}
+
+.etc-box img{
+    width:100%;
+    border-radius:10px;
+}

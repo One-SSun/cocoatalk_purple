@@ -1,0 +1,12 @@
+:root{
+    --lightpurple: #d7c5ff;
+    --purple: #aaa1bf;
+    --bluegray: #9CB4CC;
+    --darkgray: #748DA6;
+    --black:#27323d;
+    --border:solid 1px #aaa1bf;
+}
+
+.background{
+    background-color:var(--black);
+}
